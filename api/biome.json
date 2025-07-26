@@ -7,7 +7,12 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "includes": ["**", "!**/dist/**", "!**/*.generated.js"]
+    "includes": [
+      "**",
+      "!**/dist/**",
+      "!**/*.generated.js",
+      "!**/prisma/_generated"
+    ]
   },
   "formatter": {
     "indentStyle": "space"
