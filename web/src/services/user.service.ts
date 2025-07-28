@@ -1,5 +1,5 @@
 import { UserDto } from "@/dto/user.dto";
-import prisma from "../../lib/prisma";
+import prisma from "@/lib/prisma";
 
 export async function getUserById(id: string): Promise<UserDto> {
   const foundUser = await prisma.user.findUnique(
